@@ -21,11 +21,11 @@ from absl.testing import parameterized
 import jax.numpy as jnp
 import numpy as np
 
-from conformal_training import sorting_nets
-from conformal_training import variational_sorting_net
-import conformal_training.conformal_prediction as cp
-import conformal_training.smooth_conformal_prediction as scp
-import conformal_training.test_utils as cptutils
+import sorting_nets
+import variational_sorting_net
+import conformal_prediction as cp
+import smooth_conformal_prediction as scp
+import test_utils as cptutils
 
 
 class SmoothConformalPredictionTest(parameterized.TestCase):

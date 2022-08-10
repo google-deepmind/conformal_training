@@ -20,8 +20,8 @@ from absl.testing import parameterized
 import chex
 import ml_collections as collections
 
-import conformal_training.data as cpdata
-import conformal_training.data_utils as cpdatautils
+import data as cpdata
+import data_utils as cpdatautils
 DATA_DIR = './data/'
 
 

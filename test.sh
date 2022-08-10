@@ -1,3 +1,4 @@
+#!/bin/bash
 # Copyright 2022 DeepMind Technologies Limited
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,26 +14,16 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Main file to run training."""
-from absl import flags
+set -e
 
-from ml_collections import config_flags
-
-from absl import app
-from train import train
-
-
-FLAGS = flags.FLAGS
-config_flags.DEFINE_config_file(
-    'config', 'config.py', 'Configuration.')
-
-
-def main(argv):
-  """Main method when called from command line."""
-  del argv
-  config = FLAGS.config
-  train(config)
-
-
-if __name__ == '__main__':
-  app.run(main)
+rm -rf ./data
+python3 colab_utils_test.py
+python3 conformal_prediction_test.py
+python3 data_test.py
+python3 data_utils_test.py
+python3 evaluation_test.py
+python3 models_test.py
+python3 smooth_conformal_prediction_test.py
+python3 sorting_nets_test.py
+python3 train_utils_test.py
+python3 variational_sorting_net_test.py

@@ -16,15 +16,16 @@
 """Utils for evaluation in Colabs or notebooks."""
 from typing import Tuple, Callable, Dict, Any, List
 
+from absl import logging
 import jax
 import jax.numpy as jnp
 import numpy as np
 import pandas as pd
 import sklearn.metrics
 
-import conformal_training.conformal_prediction as cp
-import conformal_training.evaluation as cpeval
-import conformal_training.open_source_utils as cpstaging
+import conformal_prediction as cp
+import evaluation as cpeval
+import open_source_utils as cpstaging
 
 
 _CalibrateFn = Callable[[jnp.ndarray, jnp.ndarray, jnp.ndarray], float]
@@ -504,11 +505,10 @@ def evaluate_conformal_prediction(
     test_results_t = pd.concat([tau_t] + test_results_t, axis=1)
 
     test_results = pd.concat((test_results, test_results_t), axis=0)
-    print(f'\t trial {t}: {tau}', flush=True)
+    logging.info('Trial %d: %f', t, tau)
 
   results = {
       'mean': {'val': val_results.mean(0), 'test': test_results.mean(0)},
       'std': {'val': val_results.std(0), 'test': test_results.std(0)},
   }
-  print('\t reduced', flush=True)
   return results

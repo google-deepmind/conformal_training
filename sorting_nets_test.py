@@ -20,8 +20,8 @@ import chex
 import jax
 import jax.numpy as jnp
 
-from conformal_training import sorting_nets
-from conformal_training import variational_sorting_net
+import sorting_nets
+import variational_sorting_net
 
 
 class SortingNetsTest(parameterized.TestCase):

@@ -23,10 +23,10 @@ import jax.numpy as jnp
 import ml_collections as collections
 
 
-import conformal_training.evaluation as cpeval
-import conformal_training.smooth_conformal_prediction as scp
-import conformal_training.train_coverage as cpcoverage
-import conformal_training.train_utils as cputils
+import evaluation as cpeval
+import smooth_conformal_prediction as scp
+import train_coverage as cpcoverage
+import train_utils as cputils
 
 
 SmoothCalibrateFn = Callable[

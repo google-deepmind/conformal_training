@@ -32,7 +32,7 @@ from typing import Optional, Callable, Tuple, Any
 import jax
 import jax.numpy as jnp
 
-from conformal_training import variational_sorting_net
+import variational_sorting_net
 
 
 _SmoothQuantileFn = Callable[[Any, float], float]

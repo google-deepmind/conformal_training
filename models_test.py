@@ -21,7 +21,7 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-import conformal_training.models as cpmodels
+import models as cpmodels
 
 
 class ModelsTest(parameterized.TestCase):

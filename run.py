@@ -23,16 +23,16 @@ from absl import logging
 import ml_collections as collections
 
 from absl import app
-from conformal_training.config import get_config
+from config import get_config
 
 # pylint: disable=unused-import
-from conformal_training.experiments.run_cifar10 import get_parameters as get_cifar10_parameters
-from conformal_training.experiments.run_cifar100 import get_parameters as get_cifar100_parameters
-from conformal_training.experiments.run_emnist_byclass import get_parameters as get_emnist_byclass_parameters
-from conformal_training.experiments.run_fashion_mnist import get_parameters as get_fashion_mnist_parameters
-from conformal_training.experiments.run_mnist import get_parameters as get_mnist_parameters
-from conformal_training.experiments.run_wine_quality import get_parameters as get_wine_quality_parameters
-from conformal_training.train import train
+from experiments.run_cifar10 import get_parameters as get_cifar10_parameters
+from experiments.run_cifar100 import get_parameters as get_cifar100_parameters
+from experiments.run_emnist_byclass import get_parameters as get_emnist_byclass_parameters
+from experiments.run_fashion_mnist import get_parameters as get_fashion_mnist_parameters
+from experiments.run_mnist import get_parameters as get_mnist_parameters
+from experiments.run_wine_quality import get_parameters as get_wine_quality_parameters
+from train import train
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string('experiment_dataset', 'cifar10', 'dataset to use')

@@ -18,11 +18,11 @@ from absl import logging
 import haiku as hk
 import ml_collections as collections
 
-import conformal_training.data_utils as cpdatautils
-import conformal_training.train_conformal as cpconformal
-import conformal_training.train_coverage as cpcoverage
-import conformal_training.train_normal as cpnormal
-import conformal_training.train_utils as cputils
+import data_utils as cpdatautils
+import train_conformal as cpconformal
+import train_coverage as cpcoverage
+import train_normal as cpnormal
+import train_utils as cputils
 
 
 def train(config: collections.ConfigDict):

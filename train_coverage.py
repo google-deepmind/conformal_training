@@ -24,14 +24,14 @@ import jax
 import jax.numpy as jnp
 import ml_collections as collections
 
-from conformal_training import sorting_nets
-from conformal_training import variational_sorting_net
-import conformal_training.conformal_prediction as cp
-import conformal_training.data as cpdata
-import conformal_training.evaluation as cpeval
-import conformal_training.smooth_conformal_prediction as scp
-import conformal_training.train_normal as cpnormal
-import conformal_training.train_utils as cputils
+import sorting_nets
+import variational_sorting_net
+import conformal_prediction as cp
+import data as cpdata
+import evaluation as cpeval
+import smooth_conformal_prediction as scp
+import train_normal as cpnormal
+import train_utils as cputils
 
 
 SizeLossFn = Callable[[jnp.ndarray, jnp.ndarray, jnp.ndarray], jnp.ndarray]

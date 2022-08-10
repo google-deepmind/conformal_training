@@ -18,7 +18,7 @@ from typing import Tuple, Dict, Any, Optional
 
 import ml_collections as collections
 
-import conformal_training.experiments.experiment_utils as cpeutils
+import experiments.experiment_utils as cpeutils
 
 
 def get_parameters(
@@ -52,7 +52,7 @@ def get_parameters(
   else:
     config.epochs = 50
     config.finetune.enabled = True
-    config.finetune.path = './cifar10_models_seed0/'
+    config.finetune.path = 'cifar10_models_seed0/'
     config.finetune.model_state = False
     config.finetune.layers = 'res_net/~/logits'
     config.finetune.reinitialize = True

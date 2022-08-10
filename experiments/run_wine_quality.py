@@ -18,7 +18,7 @@ from typing import Tuple, Dict, Any, Optional
 
 import ml_collections as collections
 
-import conformal_training.experiments.experiment_utils as cpeutils
+import experiments.experiment_utils as cpeutils
 
 
 def get_parameters(

@@ -13,26 +13,4 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Main file to run training."""
-from absl import flags
-
-from ml_collections import config_flags
-
-from absl import app
-from train import train
-
-
-FLAGS = flags.FLAGS
-config_flags.DEFINE_config_file(
-    'config', 'config.py', 'Configuration.')
-
-
-def main(argv):
-  """Main method when called from command line."""
-  del argv
-  config = FLAGS.config
-  train(config)
-
-
-if __name__ == '__main__':
-  app.run(main)
+"""Experiments configuration."""

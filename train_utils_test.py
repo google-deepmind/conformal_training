@@ -19,7 +19,7 @@ from absl.testing import parameterized
 import jax.numpy as jnp
 import numpy as np
 
-import conformal_training.train_utils as cputils
+import train_utils as cputils
 
 
 class TrainUtilsTest(parameterized.TestCase):

@@ -20,8 +20,8 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-import conformal_training.evaluation as cpeval
-import conformal_training.test_utils as cptutils
+import evaluation as cpeval
+import test_utils as cptutils
 
 
 class EvaluationTest(parameterized.TestCase):

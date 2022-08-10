@@ -22,9 +22,9 @@ import jax.numpy as jnp
 import ml_collections as collections
 import optax
 
-import conformal_training.data as cpdata
-import conformal_training.models as cpmodels
-import conformal_training.open_source_utils as cpstaging
+import data as cpdata
+import models as cpmodels
+import open_source_utils as cpstaging
 
 
 FlatMapping = Union[hk.Params, hk.State]

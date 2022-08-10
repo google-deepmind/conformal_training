@@ -19,7 +19,7 @@ from typing import Tuple, Dict, Any, Optional
 import ml_collections as collections
 import numpy as np
 
-import conformal_training.experiments.experiment_utils as cpeutils
+import experiments.experiment_utils as cpeutils
 
 
 def get_parameters(
@@ -71,12 +71,12 @@ def get_parameters(
     config.learning_rate = 0.05
     config.batch_size = 100
   else:
-    config.finetune.enabled = True
     config.epochs = 50
+    config.finetune.enabled = True
+    config.finetune.path = 'cifar100_models_seed0/'
     config.finetune.model_state = False
     config.finetune.layers = 'res_net/~/logits'
     config.finetune.reinitialize = True
-    config.cifar_augmentation = 'standard+autoaugment+cutout'
 
     if experiment == 'baseline_trials':
       config.mode = 'normal'

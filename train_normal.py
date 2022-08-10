@@ -24,10 +24,10 @@ import jax.numpy as jnp
 import numpy as np
 import tensorflow as tf
 
-import conformal_training.data as cpdata
-import conformal_training.evaluation as cpeval
-import conformal_training.open_source_utils as cpstaging
-import conformal_training.train_utils as cputils
+import data as cpdata
+import evaluation as cpeval
+import open_source_utils as cpstaging
+import train_utils as cputils
 
 
 ShiftFn = Callable[[jnp.ndarray, jnp.ndarray], Tuple[jnp.ndarray, jnp.ndarray]]

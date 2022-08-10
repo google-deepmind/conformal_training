@@ -22,7 +22,7 @@ import jax.numpy as jnp
 import ml_collections as collections
 import tensorflow as tf
 
-import conformal_training.data as cpdata
+import data as cpdata
 
 
 def apply_cifar_augmentation(

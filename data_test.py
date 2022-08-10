@@ -22,7 +22,7 @@ import chex
 import numpy as np
 import tensorflow_datasets as tfds
 
-import conformal_training.data as cpdata
+import data as cpdata
 DATA_DIR = './data/'
 
 

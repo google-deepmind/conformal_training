@@ -23,8 +23,8 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-import conformal_training.conformal_prediction as cp
-import conformal_training.test_utils as cptutils
+import conformal_prediction as cp
+import test_utils as cptutils
 
 
 class ConformalPredictionTest(parameterized.TestCase):

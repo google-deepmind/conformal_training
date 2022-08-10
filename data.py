@@ -20,7 +20,7 @@ import jax.numpy as jnp
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
-import conformal_training.auto_augment as augment
+import auto_augment as augment
 
 
 def load_data_split(

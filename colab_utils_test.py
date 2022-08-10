@@ -22,9 +22,9 @@ import jax
 import ml_collections as collections
 import numpy as np
 
-import conformal_training.colab_utils as cpcolab
-import conformal_training.data_utils as cpdatautils
-import conformal_training.test_utils as cptutils
+import colab_utils as cpcolab
+import data_utils as cpdatautils
+import test_utils as cptutils
 
 
 class ColabUtilsTest(parameterized.TestCase):
