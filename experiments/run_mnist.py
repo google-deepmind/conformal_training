@@ -54,7 +54,7 @@ def get_parameters(
     config.conformal.size_transform = 'identity'
     config.conformal.rng = False
 
-    if sub_experiment == 'threshold_logp_trials':
+    if sub_experiment == 'training':
       config.learning_rate = 0.05
       config.batch_size = 500
       config.conformal.temperature = 0.5

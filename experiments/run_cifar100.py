@@ -78,7 +78,7 @@ def get_parameters(
     config.finetune.layers = 'res_net/~/logits'
     config.finetune.reinitialize = True
 
-    if experiment == 'baseline_trials':
+    if experiment == 'baseline':
       config.mode = 'normal'
     elif experiment == 'conformal':
       config.mode = 'conformal'
@@ -87,7 +87,7 @@ def get_parameters(
       config.conformal.size_transform = 'identity'
       config.conformal.rng = False
 
-      if sub_experiment == 'finetune_threshold_logp_trials':
+      if sub_experiment == 'training':
         config.learning_rate = 0.005
         config.batch_size = 100
         config.conformal.temperature = 1.
