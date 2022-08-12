@@ -42,22 +42,19 @@ detailed instructions below:
    official instructions. Make sure to restart bash after installation.
 2. Clone this repository using
 
-
-    $ git clone https://github.com/deepmind/git
-    $ cd conformal_training
+        $ git clone https://github.com/deepmind/git
+        $ cd conformal_training
 
 3. Create a new Conda environment from `environment.yml` and activate it
    (the environment can be deactivated any time using `conda deactivate`):
 
-
-    $ conda env create -f environment.yml
-    $ conda activate conformal_training
+        $ conda env create -f environment.yml
+        $ conda activate conformal_training
 
 4. Check if the code runs by running all tests:
 
-
-    $ chmod +x test.sh
-    $ ./test.sh
+        $ chmod +x test.sh
+        $ ./test.sh
 
 
 These instructions have been tested with Conda version 4.12 (not miniconda)
